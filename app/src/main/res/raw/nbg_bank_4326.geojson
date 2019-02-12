@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "nbg_bank_4326",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 1, "id": 1, "name": "Κατάστημα Πλατείας Ελευθερίας", "number": 521, "Κατάσ": "yes" }, "geometry": { "type": "Point", "coordinates": [ 33.364314060664249, 35.168790929728139 ] } },
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 2, "id": 2, "name": "Διοίκησης", "number": 0, "Κατάσ": "no" }, "geometry": { "type": "Point", "coordinates": [ 33.360122381411344, 35.169091916484227 ] } },
+{ "type": "Feature", "properties": { "ATM": "no", "Condition": null, "OBJECTID": 3, "id": 3, "name": "Μονάδα Εξυπηρέτησης Εταιρειών Διεθνών Δραστηριοτήτων L", "number": 549, "Κατάσ": "yes" }, "geometry": { "type": "Point", "coordinates": [ 33.35881790454961, 35.16330674123391 ] } },
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 4, "id": 4, "name": "Κεντρικό Κατάστημα Λευκωσίας", "number": 525, "Κατάσ": "no" }, "geometry": { "type": "Point", "coordinates": [ 33.357058655575287, 35.163151161576018 ] } },
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 5, "id": 5, "name": "Ιφιγενείας", "number": 0, "Κατάσ": "no" }, "geometry": { "type": "Point", "coordinates": [ 33.360122381411344, 35.151762719367404 ] } },
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 6, "id": 6, "name": "Κατάστημα Μόρφου", "number": 526, "Κατάσ": "yes" }, "geometry": { "type": "Point", "coordinates": [ 33.34124696000017, 35.14283483144586 ] } },
+{ "type": "Feature", "properties": { "ATM": "yes", "Condition": null, "OBJECTID": 7, "id": 7, "name": "Κατάστημα Λατσιών", "number": 528, "Κατάσ": "no" }, "geometry": { "type": "Point", "coordinates": [ 33.379383162113093, 35.10114662327193 ] } }
+]
+}
