@@ -1,7 +1,8 @@
 # GoogleMap Atm Finder
-Το ATM FINDER Android Application έχει ως στόχο την γεωγραφική απεικόνιση των ATM μιας συγκεκριμένης τράπεζας καθώς και την καταχώρηση και εμφάνιση επιπλέον πληροφοριών σχετικά με τα ATM και την κατάσταση τους.
-Η εφαρμογή είναι στην ουσία ένα Geographic Informational System/Application, το οποίο χρησιμοποιείται για να βοηθήσει τους πελάτες της τράπεζας να εντοπίσουν τα κοντινότερα ATM σε αυτούς ή σε μια διαδρομή που σκοπεύουν να πραγματοποιήσουν.
-Η εφαρμογή εμφανίζει τους χάρτες με τα ATM και την καλύτερη διαδρομή με οδηγίες για το πως θα φτάσει εκεί από την τοποθεσία του ή από κάποιο σημείο ενδιαφέροντος. Επίσης έχει την δυνατότητα να αποθηκεύσει τα σημεία ενδιαφέροντος του.
+The ATM FINDER Android Application provides a geographical presentation of ATMs of a Bank on the map along with details about them and their status (in service or not).
+The application is actually a Geographic Informational System/Application, used from the clients of the Bank, in order to help them to find the nearest in service/suitable ATM to their location or a specific place or their way to a place (between 2 locations).
+The application shows the map and the best route with directions to the ATM, from their location or point/points of interest for the clients. Also, the clients can save their points of interest (favorite places).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
