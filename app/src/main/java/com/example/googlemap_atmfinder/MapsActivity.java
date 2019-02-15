@@ -2,7 +2,6 @@ package com.example.googlemap_atmfinder;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -14,6 +13,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.data.geojson.GeoJsonLayer;
+import com.google.maps.android.data.geojson.GeoJsonPointStyle;
 
 import org.json.JSONException;
 
@@ -23,6 +23,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private static final int MY_REQUEST_INT = 177;
     private GoogleMap mMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,13 +63,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             requestPermissions( new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
             Manifest.permission.ACCESS_FINE_LOCATION}, MY_REQUEST_INT);
 
-
             return;
         }else   {
-
             mMap.setMyLocationEnabled( true );
-
-
         }
 
         GeoJsonLayer layer = null;
@@ -81,7 +78,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             e.printStackTrace();
         }
 
-
         layer.addLayerToMap();
 
         // Add a marker in Cyprus island and animate/move the camera
@@ -89,5 +85,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker( new MarkerOptions().position( cyprus ).title( "Marker in Cyprus" ) );
         mMap.animateCamera(
                 CameraUpdateFactory.newLatLngZoom( cyprus,8f ) );
+
+        //Add style to markers and make them draggable
+        GeoJsonPointStyle pointStyle = layer.getDefaultPointStyle();
+        pointStyle.setDraggable(true);
+        pointStyle.setTitle("National Bank of Greece");
+        pointStyle.setSnippet("I am a draggable marker");
     }
 }
